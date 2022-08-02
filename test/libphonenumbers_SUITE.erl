@@ -45,6 +45,6 @@ short_phone_number_info_test(_Config) ->
      #{code := <<"">>,id := <<"US">>,name := <<"United States (US)">>},
      phone := <<"112">>,valid := true} = libphonenumbers:short_phone_number_info(<<"US">>, <<"112">>),
   #{country_metadata := #{code := <<"">>, id := <<"US">>, name := <<"United States (US)">>},
-    errors := [],phone := <<"113">>, valid := true} = libphonenumbers:short_phone_number_info(<<"US">>, <<"112">>).
+    errors := [],phone := <<"113">>, valid := true} = libphonenumbers:short_phone_number_info(<<"US">>, <<"113">>).
 
 end_per_suite(_Config) -> [].
